@@ -1,0 +1,9 @@
+[
+  {
+    "id": "welcome-note",
+    "type": "note",
+    "x": 400,
+    "y": 100,
+    "text": "Welcome to Chomka WebOS!"
+  }
+]

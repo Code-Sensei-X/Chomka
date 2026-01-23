@@ -1,0 +1,22 @@
+Chomka Development Roadmap
+
+Phase 1: Initialization [COMPLETED]
+- Project directory setup.
+- README creation.
+- Core file structure (index.html, style.css, script.js).
+
+Phase 2: Core Interface [IN PROGRESS]
+- Desktop Environment styling.
+- Taskbar structure and clock.
+- Toolbelt Sidebar implementation.
+- Tab Grid (Squares Screen) layout.
+
+Phase 3: Interactive Features [PLANNED]
+- Start Menu functionality.
+- Window Management (Drag & Drop, Resize, Minimize/Maximize).
+- "Windowed" browsing experience.
+
+Phase 4: Application Logic
+- Browser tab state management.
+- Persistent storage for user preferences.
+- Theme switching engine.

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Chomka WebOS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6a11cb;
+            --secondary: #2575fc;
+            --text: #ffffff;
+            --glass: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            padding: 24px 48px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        main {
+            text-align: center;
+            padding: 80px 20px;
+            max-width: 800px;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 24px;
+            background: linear-gradient(to right, #00d2ff, #3a7bd5);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        p.subtitle {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 48px;
+            line-height: 1.6;
+        }
+
+        .btn-download {
+            display: inline-block;
+            padding: 18px 48px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            border-radius: 50px;
+            box-shadow: 0 10px 30px rgba(106, 17, 203, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn-download:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 40px rgba(106, 17, 203, 0.6);
+        }
+
+        .newsletter-section {
+            margin-top: 80px;
+            padding: 40px;
+            background: var(--glass);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .newsletter-input {
+            padding: 16px;
+            border-radius: 12px;
+            border: none;
+            margin-right: 12px;
+            font-family: inherit;
+            width: 300px;
+        }
+
+        .btn-subscribe {
+            padding: 16px 32px;
+            border-radius: 12px;
+            border: none;
+            background: white;
+            color: var(--primary);
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 60px;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 24px;
+            border-radius: 16px;
+            transition: background 0.2s;
+        }
+
+        .feature-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Chomka.</div>
+        <nav>
+            <a href="#" style="color:white; text-decoration:none;">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>The WebOS Browser</h1>
+        <p class="subtitle">Experience the web like never before. Native desktop window management inside your browser
+            tab.</p>
+
+        <a href="dist/ChomkaBrowser_v1.03.exe" class="btn-download" download>Download for Windows</a>
+
+        <div class="features">
+            <div class="feature-card">
+                <h3>📂 Tab Folders</h3>
+                <p>Organize your browsing into dedicated squares and folders.</p>
+            </div>
+            <div class="feature-card">
+                <h3>⚡ Chomka Search</h3>
+                <p>Lightning fast, centered search experience.</p>
+            </div>
+            <div class="feature-card">
+                <h3>💬 Direct Feedback</h3>
+                <p>Built-in communication channel with the dev team.</p>
+            </div>
+        </div>
+
+        <div class="newsletter-section">
+            <h3>Stay Updated</h3>
+            <p style="margin-bottom: 20px; opacity: 0.7;">Subscribe to our newsletter for developer updates.</p>
+            <form onsubmit="alert('Subscribed! (Simulation)'); return false;">
+                <input type="email" class="newsletter-input" placeholder="Enter your gmail address" required>
+                <button type="submit" class="btn-subscribe">Subscribe</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

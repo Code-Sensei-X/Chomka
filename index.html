@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chomka WebOS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="sakura.png">
+</head>
+
+<body>
+    <div id="desktop">
+        <!-- Search Widget -->
+        <div id="search-widget">
+            <div class="search-brand">Chomka Search</div>
+            <input type="text" id="search-input" placeholder="Search Google or type a URL">
+        </div>
+
+        <!-- Desktop Icons / Windows Container -->
+
+        <!-- Desktop Items Container -->
+        <div id="desktop-items-container">
+            <!-- Dynamic Content via DesktopManager -->
+        </div>
+    </div>
+
+    <!-- Toolbelt Sidebar -->
+    <aside id="toolbelt" class="right">
+        <div class="tool-icon" title="New Tab" id="btn-add-tab">
+            <span>+</span>
+        </div>
+        <div class="tool-icon" title="Tab Grid">
+            <span>:::</span>
+        </div>
+        <div class="tool-icon" title="Feedback" id="btn-feedback">
+            <span>✉</span>
+        </div>
+        <div class="tool-icon" title="Info" id="btn-info">
+            <span>ℹ</span>
+        </div>
+        <div class="tool-icon" title="Move Mode" id="btn-move-mode">
+            <span>⬈</span>
+        </div>
+        <div class="tool-icon" title="Settings">
+            <span>⚙</span>
+        </div>
+    </aside>
+
+    <!-- Start Menu -->
+    <div id="start-menu" class="hidden">
+        <div class="menu-user">
+            <div class="user-avatar">👤</div>
+            <div class="user-info">
+                <span class="user-name">Chomka User</span>
+                <span class="user-status">Online</span>
+            </div>
+        </div>
+        <div class="menu-content">
+            <div class="menu-section">
+                <div class="menu-item-large" id="menu-btn-readme">
+                    <span class="item-icon">ℹ️</span>
+                    <span class="item-text">Documentation</span>
+                </div>
+                <div class="menu-item-large" id="menu-btn-settings">
+                    <span class="item-icon">⚙️</span>
+                    <span class="item-text">System Settings</span>
+                </div>
+            </div>
+        </div>
+        <div class="menu-footer">
+            <button id="shutdown-btn">
+                <span class="btn-icon">⏻</span>
+                Shut Down
+            </button>
+        </div>
+    </div>
+
+    <!-- Save Status Indicator -->
+    <div id="save-status" class="hidden">
+        <span class="status-icon">💾</span>
+        <span class="status-text">Saving...</span>
+    </div>
+
+    <!-- Taskbar -->
+    <div id="taskbar">
+        <button id="start-btn">Start</button>
+        <div id="taskbar-apps">
+            <!-- App shortcuts -->
+        </div>
+        <div id="tray">
+            <span id="clock">12:00</span>
+        </div>
+    </div>
+
+    <!-- Add Item Panel (Hidden by default) -->
+    <div id="add-panel" class="hidden">
+        <h3 class="panel-title">Add New Item</h3>
+        <div class="add-grid">
+            <div class="add-option" data-type="folder">
+                <div class="opt-icon">📁</div>
+                <span>Folder</span>
+            </div>
+            <div class="add-option" data-type="note">
+                <div class="opt-icon">📝</div>
+                <span>Sticky Note</span>
+            </div>
+            <div class="add-option" data-type="image">
+                <div class="opt-icon">🖼️</div>
+                <span>Image Widget</span>
+            </div>
+            <div class="add-option" data-type="browser">
+                <div class="opt-icon">🌐</div>
+                <span>Browser Window</span>
+            </div>
+        </div>
+        <button id="add-panel-close">Cancel</button>
+    </div>
+
+
+    <!-- Universal Modal -->
+    <div id="modal-overlay" class="hidden">
+        <div id="modal-content">
+            <h2 id="modal-title">Title</h2>
+            <div id="modal-body">Content</div>
+            <button id="modal-close">Close</button>
+        </div>
+    </div>
+
+    <!-- Desktop Context Menu -->
+    <div id="context-menu" class="hidden">
+        <div class="menu-item" data-action="add-folder">Add Folder</div>
+        <div class="menu-item" data-action="add-note">Add Note</div>
+        <div class="menu-item" data-action="add-image">Add Image</div>
+        <div class="divider"></div>
+        <div class="menu-item" data-action="move-toolbelt">Move Toolbelt</div>
+    </div>
+
+    <!-- Item Context Menu -->
+    <div id="item-context-menu" class="hidden">
+        <div class="menu-item" data-action="layer-up">Bring Forward</div>
+        <div class="menu-item" data-action="layer-down">Send Backward</div>
+        <div class="divider"></div>
+        <div class="menu-item" data-action="delete-item" style="color: #ff4757;">Delete</div>
+    </div>
+
+    <script src="js/desktop_manager.js"></script>
+    <script src="js/shutdown_manager.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
