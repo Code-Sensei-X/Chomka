@@ -10,24 +10,67 @@ import traceback
 from lifecycle import LifecycleManager
 
 CONFIG_FILE = 'config.json'
+USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
 
 class Api:
-    def __init__(self, window=None):
-        self.window = window
+    def __init__(self, window=None, is_test_mode=False):
+        self._window = window
+        self.is_test_mode = is_test_mode
         self.config = self._load_config()
         self.is_saving_and_quitting = False
         self._executor = ThreadPoolExecutor(max_workers=1)
-        self.lifecycle = LifecycleManager(self)
+        self._lifecycle = LifecycleManager(self)
         self._log_file = os.path.join(self._get_share_dir(), "chomka.log")
-        self.log("Chomka: Session started")
+        
+        mode_str = " (TEST MODE)" if is_test_mode else ""
+        self.log(f"Chomka: Session started (v1.14b){mode_str}")
+
+    def show_notification(self, title, message):
+        """Triggers a native Windows toast notification via PowerShell."""
+        import subprocess
+        # Clean inputs for PowerShell safety
+        title_safe = title.replace("'", "''")
+        msg_safe = message.replace("'", "''")
+        
+        ps_script = f"""
+        $title = '{title_safe}'
+        $msg = '{msg_safe}'
+        [reflection.assembly]::loadwithpartialname('System.Windows.Forms') | Out-Null
+        $toast = New-Object System.Windows.Forms.NotifyIcon
+        $toast.Icon = [System.Drawing.Icon]::ExtractAssociatedIcon([System.Diagnostics.Process]::GetCurrentProcess().MainModule.FileName)
+        $toast.BalloonTipTitle = $title
+        $toast.BalloonTipText = $msg
+        $toast.Visible = $true
+        $toast.ShowBalloonTip(5000)
+        # Give it a tiny bit of time to display before cleanup (async shell call anyway)
+        Start-Sleep -Seconds 1
+        $toast.Dispose()
+        """
+        try:
+            subprocess.Popen(["powershell", "-WindowStyle", "Hidden", "-Command", ps_script], 
+                             creationflags=subprocess.CREATE_NO_WINDOW)
+            self.log(f"[Notification] Native trigger: {title}")
+        except Exception as e:
+            self.log(f"[Notification] Failed to trigger native: {e}", "ERROR")
+
+    @property
+    def lifecycle(self):
+        return self._lifecycle
 
     def _load_config(self):
         try:
             if os.path.exists(CONFIG_FILE):
                 with open(CONFIG_FILE, 'r') as f:
                     return json.load(f)
-        except Exception:
-            pass
+            else:
+                # First run: Create default config
+                default_config = {"data_dir": "shared_data"}
+                self.config = default_config
+                self._save_config()
+                self.log("Created initial config.json")
+                return default_config
+        except Exception as e:
+            print(f"Config load error: {e}")
         return {"data_dir": "shared_data"}
 
     def _save_config(self):
@@ -57,10 +100,10 @@ class Api:
 
     def choose_folder(self):
         """Allows user to pick a custom directory for data."""
-        if not self.window:
+        if not self._window:
             return {'success': False, 'error': 'Window not ready'}
             
-        result = self.window.create_file_dialog(webview.FOLDER_DIALOG)
+        result = self._window.create_file_dialog(webview.FOLDER_DIALOG)
         if result and len(result) > 0:
             new_path = result[0]
             self.config["data_dir"] = new_path
@@ -118,43 +161,43 @@ class Api:
             self.log(f"Asset save error: {e}\n{err_details}", "ERROR")
             return {'success': False, 'error': str(e)}
 
+    def pick_and_save_image(self):
+        """Allows user to pick an image from Windows and saves it to local assets."""
+        if not self._window:
+            return {'success': False, 'error': 'Window not ready'}
+            
+        file_types = ('Image Files (*.jpg;*.jpeg;*.png;*.gif)', 'All files (*.*)')
+        result = self._window.create_file_dialog(webview.OPEN_DIALOG, allow_multiple=False, file_types=file_types)
+        
+        if result and len(result) > 0:
+            src_path = result[0]
+            try:
+                import shutil
+                import uuid
+                
+                ext = os.path.splitext(src_path)[1]
+                share_dir = self._get_share_dir()
+                assets_dir = os.path.join(share_dir, "assets")
+                if not os.path.exists(assets_dir):
+                    os.makedirs(assets_dir)
+                
+                new_filename = f"user_{uuid.uuid4().hex}{ext}"
+                dest_path = os.path.join(assets_dir, new_filename)
+                
+                shutil.copy2(src_path, dest_path)
+                self.log(f"Image picked and saved: {new_filename}")
+                return {'success': True, 'path': f"assets/{new_filename}"}
+            except Exception as e:
+                self.log(f"Image pick/save error: {e}", "ERROR")
+                return {'success': False, 'error': str(e)}
+        
+        return {'success': False, 'error': 'Cancelled'}
+
     def get_data_url(self):
         """Returns the absolute file:// URL to the data directory."""
         path = self._get_share_dir()
         return f"file:///{path.replace('\\', '/')}/"
 
-    def update_coords(self, item_id, x, y):
-        """Ultra-fast coordinate update for frequent drags."""
-        self._executor.submit(self._update_coords_internal, item_id, x, y)
-        return {'success': True}
-
-    def _update_coords_internal(self, item_id, x, y):
-        """Updates the coords.txt file (simple key:value format)."""
-        try:
-            share_dir = self._get_share_dir()
-            coord_file = os.path.join(share_dir, "coords.txt")
-            
-            # Read existing coords
-            coords = {}
-            if os.path.exists(coord_file):
-                try:
-                    with open(coord_file, 'r') as f:
-                        for line in f:
-                            if ':' in line:
-                                k, v = line.strip().split(':', 1)
-                                coords[k] = v
-                except: pass
-            
-            # Update specific item
-            coords[item_id] = f"{int(x)},{int(y)}"
-            
-            # Write back
-            with open(coord_file, 'w') as f:
-                for k, v in coords.items():
-                    f.write(f"{k}:{v}\n")
-                    
-        except Exception as e:
-            print(f"Chomka: Coord save error: {e}")
 
     def log_js_error(self, message, stack=""):
         """Called from JS to log client-side errors."""
@@ -186,59 +229,34 @@ class Api:
         """Internal synchronous save method run in the executor thread."""
         try:
             share_dir = self._get_share_dir()
-            if not os.path.exists(share_dir):
-                os.makedirs(share_dir)
-            
             filepath = os.path.join(share_dir, filename)
+            
+            # Ensure parent directory exists (e.g. saves/screenlayout.txt)
+            parent_dir = os.path.dirname(filepath)
+            if not os.path.exists(parent_dir):
+                os.makedirs(parent_dir)
+            
             self._write_atomic(filepath, content)
             
-            self.log(f"File saved: {filename}")
-            if notify_js and self.window:
+            content_snippet = (content[:50] + '...') if len(content) > 50 else content
+            self.log(f"File saved: {filename} (size: {len(content)} bytes, snippet: {content_snippet})")
+            if notify_js and self._window:
                 try:
-                    self.window.evaluate_js(f'onSaveComplete("{filename}")')
+                    self._window.evaluate_js(f'onSaveComplete("{filename}")')
                 except Exception as eval_err:
                     self.log(f"Bridge error (onSaveComplete): {eval_err}", "WARNING")
             return {'success': True, 'path': filepath}
         except Exception as e:
             err_details = traceback.format_exc()
             self.log(f"Error saving file {filename}: {e}\n{err_details}", "ERROR")
-            if notify_js and self.window:
+            if notify_js and self._window:
                 try:
                     err_msg = str(e).replace('"', '\\"').replace('\n', '\\n')
-                    self.window.evaluate_js(f'onSaveError("{filename}", "{err_msg}")')
+                    self._window.evaluate_js(f'onSaveError("{filename}", "{err_msg}")')
                 except Exception as eval_err:
                     self.log(f"Bridge error (onSaveError): {eval_err}", "WARNING")
             return {'success': False, 'error': str(e)}
 
-    def _update_coords_internal(self, item_id, x, y):
-        """Updates the coords.txt file atomically."""
-        try:
-            share_dir = self._get_share_dir()
-            coord_file = os.path.join(share_dir, "coords.txt")
-            
-            # Read existing coords
-            coords = {}
-            if os.path.exists(coord_file):
-                try:
-                    with open(coord_file, 'r', encoding='utf-8') as f:
-                        for line in f:
-                            if ':' in line:
-                                k, v = line.strip().split(':', 1)
-                                coords[k] = v
-                except: pass
-            
-            # Update specific item
-            coords[item_id] = f"{int(x)},{int(y)}"
-            
-            # Construct content
-            lines = []
-            for k, v in coords.items():
-                lines.append(f"{k}:{v}\n")
-            
-            self._write_atomic(coord_file, "".join(lines))
-                    
-        except Exception as e:
-            self.log(f"Coord save error: {e}", "ERROR")
 
     def read_file(self, filename):
         """Reads a file and merges with coords.txt if it's desktop.json."""
@@ -251,26 +269,6 @@ class Api:
                 with open(filepath, 'r', encoding='utf-8') as f:
                     content = f.read()
             
-            # If we are reading desktop.json, try to merge coordinates from coords.txt
-            if filename == 'desktop.json' and content:
-                try:
-                    data = json.loads(content)
-                    coord_file = os.path.join(share_dir, "coords.txt")
-                    if os.path.exists(coord_file):
-                        with open(coord_file, 'r', encoding='utf-8') as f:
-                            for line in f:
-                                if ':' in line:
-                                    k, v = line.strip().split(':', 1)
-                                    if ',' in v:
-                                        x, y = v.split(',', 1)
-                                        # Find item and update
-                                        for item in data:
-                                            if item.get('id') == k:
-                                                item['x'] = int(x)
-                                                item['y'] = int(y)
-                        content = json.dumps(data)
-                except Exception as e:
-                    self.log(f"Merge coords error: {e}", "WARNING")
             
             if content is not None:
                 return content
@@ -285,6 +283,100 @@ class Api:
         except Exception as e:
             print(f"Error reading file {filename}: {e}")
             return None
+
+    def _merge_coords(self, items):
+        """Merges coordinates from coords.txt into the items list."""
+        try:
+            share_dir = self._get_share_dir()
+            coords_path = os.path.join(share_dir, "screenlayout.txt")
+            if os.path.exists(coords_path):
+                coords_map = {}
+                with open(coords_path, 'r', encoding='utf-8') as f:
+                    for line in f:
+                        if ':' in line:
+                            parts = line.strip().split(':')
+                            if len(parts) == 2:
+                                cid, cpos = parts
+                                if ',' in cpos:
+                                    x, y = cpos.split(',')
+                                    coords_map[cid] = {'x': int(float(x)), 'y': int(float(y))}
+                
+                # Apply to items
+                if isinstance(items, list):
+                    for item in items:
+                        if item.get('id') in coords_map:
+                            pos = coords_map[item['id']]
+                            item['x'] = pos['x']
+                            item['y'] = pos['y']
+            return items
+        except Exception as e:
+            print(f"Error merging coords: {e}")
+            return items
+
+    def _save_coords_file(self, items):
+        """Saves coordinates to coords.txt."""
+        try:
+            if not isinstance(items, list): return
+            
+            share_dir = self._get_share_dir()
+            coords_path = os.path.join(share_dir, "screenlayout.txt")
+            
+            lines = []
+            for item in items:
+                if 'id' in item and 'x' in item and 'y' in item:
+                    lines.append(f"{item['id']}:{item['x']},{item['y']}")
+            
+            with open(coords_path, 'w', encoding='utf-8') as f:
+                f.write('\n'.join(lines))
+        except Exception as e:
+            print(f"Error saving coords.txt: {e}")
+
+    def get_state(self, key):
+        """Reads a bit of app state."""
+        if key == 'is_test_mode':
+            return {'success': True, 'value': self.is_test_mode}
+        try:
+            share_dir = self._get_share_dir()
+            config_path = os.path.join(share_dir, "config.json")
+            if os.path.exists(config_path):
+                with open(config_path, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                    val = data.get(key)
+                    
+                    # SPECIAL HANDLING: if requesting desktop_items, merge screenlayout.txt
+                    if key == 'desktop_items' and isinstance(val, list):
+                        val = self._merge_coords(val)
+                        
+                    return {'success': True, 'value': val}
+            return {'success': True, 'value': None}
+        except Exception as e:
+            return {'success': False, 'error': str(e)}
+
+    def save_state(self, key, value):
+        """Saves a bits of app state to config.json atomically."""
+        try:
+            share_dir = self._get_share_dir()
+            config_path = os.path.join(share_dir, "config.json")
+            
+            data = {}
+            if os.path.exists(config_path):
+                try:
+                    with open(config_path, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
+                except: pass
+            
+            data[key] = value
+            self._write_atomic(config_path, json.dumps(data, indent=4))
+            
+            # SPECIAL HANDLING: Sync coords to screenlayout.txt
+            if key == 'desktop_items':
+                self._save_coords_file(value)
+                
+            self.log(f"State saved: {key}")
+            return {'success': True}
+        except Exception as e:
+            self.log(f"State save error: {e}", "ERROR")
+            return {'success': False, 'error': str(e)}
 
     def send_feedback(self, message):
         """Opens the default mail client with feedback."""
@@ -309,20 +401,60 @@ class Api:
         except Exception as e:
             return {'success': False, 'error': str(e)}
 
+    def open_native_window(self, url):
+        """Opens a URL in a new native window for compatibility."""
+        try:
+            # Handle case where URL might be passed as a state object/dict
+            if isinstance(url, dict) and 'value' in url:
+                url = url['value']
+            
+            if not isinstance(url, str):
+                self.log(f"Invalid URL type received in open_native_window: {type(url)}", "ERROR")
+                return {'success': False, 'error': 'Invalid URL type'}
+
+            self.log(f"Opening native window for: {url}")
+            # Track as last YT URL if applicable
+            if 'youtube.com' in url.lower() or 'youtu.be' in url.lower():
+                self.save_state('last_yt_url', url)
+                
+            webview.create_window('Chomka WebOS External', url)
+            return {'success': True}
+        except Exception as e:
+            self.log(f"Error opening native window: {e}", "ERROR")
+            return {'success': False, 'error': str(e)}
+
+    def set_shutdown_flag(self, value):
+        """Allows JS to signal that a graceful shutdown is in progress."""
+        self.is_saving_and_quitting = value
+        self.log(f"Shutdown flag set to: {value}")
+
     def quit(self):
-        self.lifecycle.shut_down_immediately()
+        self.is_saving_and_quitting = True
+        try: self._executor.shutdown(wait=False)
+        except: pass
+        self._lifecycle.shut_down_immediately()
 
     def quit_finally(self):
-        self.lifecycle.shut_down_immediately()
+        self.is_saving_and_quitting = True
+        try: self._executor.shutdown(wait=False)
+        except: pass
+        self._lifecycle.shut_down_immediately()
 
     def confirm_quit(self):
-        if not self.window: return True
-        return self.window.create_confirmation_dialog('Unsaved Changes', 'Do you want to save your progress before exiting?')
+        if not self._window: return True
+        return self._window.create_confirmation_dialog('Unsaved Changes', 'Do you want to save your progress before exiting?')
 
     def hook_closing(self, window):
-        window.events.closing += self.lifecycle.on_closing
+        window.events.closing += self._lifecycle.on_closing
 
 def main():
+    import argparse
+    parser = argparse.ArgumentParser(description="Chomka WebOS Launcher")
+    parser.add_argument('--test', '--debug', action='store_true', help="Run in test mode with DevTools enabled")
+    args, unknown = parser.parse_known_args()
+    
+    is_test = args.test
+
     try:
         # Get absolute path to index.html
         if getattr(sys, 'frozen', False):
@@ -334,10 +466,10 @@ def main():
         icon_path = os.path.join(base_path, "sakura.png")
         file_url = f"file://{html_path}"
         
-        api = Api()
+        api = Api(is_test_mode=is_test)
         
         window = webview.create_window(
-            'Chomka WebOS', 
+            'Chomka WebOS' + (" [TEST MODE]" if is_test else ""), 
             file_url, 
             js_api=api,
             width=1280, 
@@ -346,12 +478,12 @@ def main():
             min_size=(800, 600)
         )
         
-        api.window = window 
+        api._window = window 
         api.hook_closing(window)
         
         # Start webview
-        api.log("Chomka: Starting webview")
-        webview.start(debug=False)
+        api.log(f"Chomka: Starting webview (debug={is_test})")
+        webview.start(debug=is_test)
         api.log("Chomka: Webview loop ended")
         
     except Exception as e:

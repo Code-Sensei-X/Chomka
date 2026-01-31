@@ -1,0 +1,19 @@
+CRITICAL CRASH: create_window() got an unexpected keyword argument 'user_agent'
+Traceback (most recent call last):
+  File "D:\Projects\! Antigravity Projects\chomka\launcher.py", line 348, in main
+    window = webview.create_window(
+        'Chomka WebOS',
+    ...<6 lines>...
+        user_agent=USER_AGENT
+    )
+TypeError: create_window() got an unexpected keyword argument 'user_agent'
+
+CRITICAL CRASH: 'Api' object has no attribute 'lifecycle'
+Traceback (most recent call last):
+  File "D:\Projects\Antigravity Projects\chomka v1.05\launcher.py", line 407, in main
+    api.hook_closing(window)
+  File "D:\Projects\Antigravity Projects\chomka v1.05\launcher.py", line 373, in hook_closing
+    window.events.closing += self.lifecycle.on_closing
+                             ^^^^^^^^^^^^^^
+AttributeError: 'Api' object has no attribute 'lifecycle'. Did you mean: '_lifecycle'?
+

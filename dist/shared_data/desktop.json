@@ -5,5 +5,13 @@
     "x": 400,
     "y": 100,
     "text": "Welcome to Chomka WebOS!"
+  },
+  {
+    "id": "note-1769691702119",
+    "type": "note",
+    "text": "",
+    "zIndex": 1,
+    "x": 1170,
+    "y": 40
   }
 ]

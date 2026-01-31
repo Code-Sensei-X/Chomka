@@ -1,0 +1,4 @@
+app-youtube: 21,165 [app]
+app-discord: 20,350 [app]
+app-minecraft-wiki: 20,550 [app]
+yt-std-1769642982532: 482,35 [video]

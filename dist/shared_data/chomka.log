@@ -1,0 +1,636 @@
+[2026-01-23 08:11:47] [INFO] Chomka: Session started
+[2026-01-23 08:11:47] [INFO] Chomka: Starting webview
+[2026-01-23 08:12:10] [INFO] File saved: desktop.json
+[2026-01-23 08:16:20] [INFO] File saved: desktop.json
+[2026-01-23 08:17:13] [INFO] File saved: desktop.json
+[2026-01-23 08:18:30] [INFO] File saved: desktop.json
+[2026-01-23 08:18:56] [INFO] File saved: desktop.json
+[2026-01-23 08:19:27] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-23 08:19:28] [INFO] [Lifecycle] Confirmation result: True
+[2026-01-23 08:19:28] [INFO] [Lifecycle] User chose SAVE. Triggering JS ShutdownManager (async)...
+[2026-01-23 08:19:28] [JS_ERROR] JS Error: INFO
+Stack: [Shutdown] Initiating sequence (triggerQuit=true)
+[2026-01-23 08:19:28] [INFO] [Lifecycle] JS ShutdownManager triggered successfully
+[2026-01-23 08:19:28] [INFO] File saved: desktop.json
+[2026-01-23 08:19:28] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-23 08:19:28] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 08:19:28] [INFO] [Lifecycle] Save-and-quit in progress, ignoring close request until done
+[2026-01-23 08:19:28] [INFO] [Lifecycle] Window destroyed successfully
+[2026-01-23 08:24:30] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 08:24:30] [INFO] [Lifecycle] Save-and-quit in progress, ignoring close request until done
+[2026-01-23 08:24:32] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 08:24:32] [INFO] [Lifecycle] Save-and-quit in progress, ignoring close request until done
+[2026-01-23 08:24:34] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 08:24:34] [INFO] [Lifecycle] Save-and-quit in progress, ignoring close request until done
+[2026-01-23 08:24:36] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 08:24:36] [INFO] [Lifecycle] Save-and-quit in progress, ignoring close request until done
+[2026-01-23 08:24:39] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 08:24:39] [INFO] [Lifecycle] Save-and-quit in progress, ignoring close request until done
+[2026-01-23 08:24:41] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 08:24:41] [INFO] [Lifecycle] Save-and-quit in progress, ignoring close request until done
+[2026-01-23 08:24:50] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 08:24:50] [INFO] [Lifecycle] Save-and-quit in progress, ignoring close request until done
+[2026-01-23 08:32:12] [INFO] Chomka: Session started
+[2026-01-23 08:32:12] [INFO] Chomka: Starting webview
+[2026-01-23 08:32:21] [INFO] File saved: desktop.json
+[2026-01-23 08:32:21] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-23 08:32:23] [INFO] [Lifecycle] Confirmation result: True
+[2026-01-23 08:32:23] [INFO] [Lifecycle] User chose SAVE. Triggering JS ShutdownManager (async)...
+[2026-01-23 08:32:23] [JS_ERROR] JS Error: INFO
+Stack: [Shutdown] Initiating sequence (triggerQuit=true)
+[2026-01-23 08:32:23] [INFO] [Lifecycle] JS ShutdownManager triggered successfully
+[2026-01-23 08:32:23] [INFO] File saved: desktop.json
+[2026-01-23 08:32:23] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-23 08:32:23] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 08:32:23] [INFO] [Lifecycle] Save-and-quit in progress, ignoring close request until done
+[2026-01-23 08:32:23] [INFO] [Lifecycle] Window destroyed successfully
+[2026-01-23 08:33:05] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 08:33:05] [INFO] [Lifecycle] Save-and-quit in progress, ignoring close request until done
+[2026-01-23 08:37:23] [INFO] Chomka: Session started
+[2026-01-23 08:37:23] [INFO] Chomka: Starting webview
+[2026-01-23 08:37:30] [INFO] File saved: desktop.json
+[2026-01-23 08:37:33] [INFO] Shutdown flag set to: True
+[2026-01-23 08:37:33] [JS_ERROR] JS Error: INFO
+Stack: [Shutdown] Initiating sequence (triggerQuit=true)
+[2026-01-23 08:37:33] [INFO] File saved: desktop.json
+[2026-01-23 08:37:33] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-23 08:37:33] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 08:37:33] [INFO] [Lifecycle] Save-and-quit in progress, ignoring close request until done
+[2026-01-23 08:37:33] [INFO] [Lifecycle] Window destroyed successfully
+[2026-01-23 08:38:21] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 08:38:21] [INFO] [Lifecycle] Save-and-quit in progress, ignoring close request until done
+[2026-01-23 09:01:37] [INFO] Chomka: Session started
+[2026-01-23 09:01:37] [INFO] Chomka: Starting webview
+[2026-01-23 09:03:56] [INFO] File saved: desktop.json
+[2026-01-23 09:04:00] [INFO] Shutdown flag set to: True
+[2026-01-23 09:04:00] [JS_ERROR] JS Error: INFO
+Stack: [Shutdown] Initiating sequence (triggerQuit=true)
+[2026-01-23 09:04:00] [INFO] File saved: desktop.json
+[2026-01-23 09:04:00] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-23 09:04:00] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 09:04:00] [INFO] [Lifecycle] Save-and-quit in progress, ignoring close request until done
+[2026-01-23 09:04:00] [INFO] [Lifecycle] Window destroyed successfully
+[2026-01-23 09:04:52] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 09:04:52] [INFO] [Lifecycle] Save-and-quit in progress, ignoring close request until done
+[2026-01-23 09:05:58] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 09:05:58] [INFO] [Lifecycle] Save-and-quit in progress, ignoring close request until done
+[2026-01-23 09:10:06] [INFO] Chomka: Session started (v1.0.6)
+[2026-01-23 09:10:06] [INFO] Chomka: Starting webview
+[2026-01-23 09:10:25] [INFO] File saved: desktop.json
+[2026-01-23 09:10:27] [INFO] Shutdown flag set to: True
+[2026-01-23 09:10:27] [JS_ERROR] JS Error: INFO
+Stack: [Shutdown] Initiating sequence (triggerQuit=true)
+[2026-01-23 09:10:27] [INFO] File saved: desktop.json
+[2026-01-23 09:10:27] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-23 09:10:27] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 09:10:27] [INFO] [Lifecycle] Terminal state active, allowing final close
+[2026-01-23 09:10:28] [INFO] [Lifecycle] Window destroyed. Triggering hard exit...
+[2026-01-23 09:10:33] [INFO] Chomka: Session started (v1.0.6)
+[2026-01-23 09:10:33] [INFO] Chomka: Starting webview
+[2026-01-23 09:10:43] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-23 09:10:43] [INFO] File saved: desktop.json
+[2026-01-23 09:10:45] [INFO] [Lifecycle] Confirmation result: True
+[2026-01-23 09:10:45] [INFO] [Lifecycle] User chose SAVE. Triggering JS ShutdownManager (async)...
+[2026-01-23 09:10:45] [JS_ERROR] JS Error: INFO
+Stack: [Shutdown] Initiating sequence (triggerQuit=true)
+[2026-01-23 09:10:45] [INFO] [Lifecycle] JS ShutdownManager triggered successfully
+[2026-01-23 09:10:45] [INFO] File saved: desktop.json
+[2026-01-23 09:10:45] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-23 09:10:45] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 09:10:45] [INFO] [Lifecycle] Terminal state active, allowing final close
+[2026-01-23 09:10:45] [INFO] [Lifecycle] Window destroyed. Triggering hard exit...
+[2026-01-23 09:10:47] [INFO] Chomka: Session started (v1.0.6)
+[2026-01-23 09:10:47] [INFO] Chomka: Starting webview
+[2026-01-23 09:10:54] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-23 09:10:55] [INFO] [Lifecycle] Confirmation result: True
+[2026-01-23 09:10:55] [INFO] [Lifecycle] User chose SAVE. Triggering JS ShutdownManager (async)...
+[2026-01-23 09:10:55] [JS_ERROR] JS Error: INFO
+Stack: [Shutdown] Initiating sequence (triggerQuit=true)
+[2026-01-23 09:10:55] [INFO] [Lifecycle] JS ShutdownManager triggered successfully
+[2026-01-23 09:10:55] [INFO] File saved: desktop.json
+[2026-01-23 09:10:55] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-23 09:10:55] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 09:10:55] [INFO] [Lifecycle] Terminal state active, allowing final close
+[2026-01-23 09:10:56] [INFO] [Lifecycle] Window destroyed. Triggering hard exit...
+[2026-01-23 09:21:49] [INFO] Chomka: Session started (v1.0.6)
+[2026-01-23 09:21:49] [INFO] Chomka: Starting webview
+[2026-01-23 09:21:56] [INFO] File saved: desktop.json
+[2026-01-23 09:22:01] [INFO] File saved: desktop.json
+[2026-01-23 09:22:04] [INFO] Shutdown flag set to: True
+[2026-01-23 09:22:04] [JS_ERROR] JS Error: INFO
+Stack: [Shutdown] Initiating sequence (triggerQuit=true)
+[2026-01-23 09:22:04] [INFO] File saved: desktop.json
+[2026-01-23 09:22:04] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-23 09:22:04] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 09:22:04] [INFO] [Lifecycle] Terminal state active, allowing final close
+[2026-01-23 09:22:04] [INFO] [Lifecycle] Window destroyed. Triggering hard exit...
+[2026-01-23 09:22:07] [INFO] Chomka: Session started (v1.0.6)
+[2026-01-23 09:22:07] [INFO] Chomka: Starting webview
+[2026-01-23 09:22:15] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-23 09:22:15] [INFO] File saved: desktop.json
+[2026-01-23 09:22:16] [INFO] [Lifecycle] Confirmation result: True
+[2026-01-23 09:22:16] [INFO] [Lifecycle] User chose SAVE. Triggering JS ShutdownManager (async)...
+[2026-01-23 09:22:16] [JS_ERROR] JS Error: INFO
+Stack: [Shutdown] Initiating sequence (triggerQuit=true)
+[2026-01-23 09:22:16] [INFO] [Lifecycle] JS ShutdownManager triggered successfully
+[2026-01-23 09:22:16] [INFO] File saved: desktop.json
+[2026-01-23 09:22:16] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-23 09:22:16] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 09:22:16] [INFO] [Lifecycle] Terminal state active, allowing final close
+[2026-01-23 09:22:16] [INFO] [Lifecycle] Window destroyed. Triggering hard exit...
+[2026-01-23 09:22:18] [INFO] Chomka: Session started (v1.0.6)
+[2026-01-23 09:22:18] [INFO] Chomka: Starting webview
+[2026-01-23 09:22:23] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-23 09:22:26] [INFO] [Lifecycle] Confirmation result: False
+[2026-01-23 09:22:26] [INFO] [Lifecycle] User chose QUIT WITHOUT SAVE
+[2026-01-23 09:22:26] [INFO] Chomka: Webview loop ended
+[2026-01-23 09:26:39] [INFO] Chomka: Session started (v1.0.6)
+[2026-01-23 09:26:39] [INFO] Chomka: Starting webview
+[2026-01-23 09:26:51] [INFO] File saved: desktop.json
+[2026-01-23 09:26:57] [INFO] File saved: desktop.json
+[2026-01-23 09:27:16] [INFO] File saved: desktop.json
+[2026-01-23 09:27:36] [INFO] Shutdown flag set to: True
+[2026-01-23 09:27:36] [JS_ERROR] JS Error: INFO
+Stack: [Shutdown] Initiating sequence (triggerQuit=true)
+[2026-01-23 09:27:36] [INFO] File saved: desktop.json
+[2026-01-23 09:27:36] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-23 09:27:36] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 09:27:36] [INFO] [Lifecycle] Terminal state active, allowing final close
+[2026-01-23 09:27:37] [INFO] [Lifecycle] Window destroyed. Triggering hard exit...
+[2026-01-23 09:27:39] [INFO] Chomka: Session started (v1.0.6)
+[2026-01-23 09:27:39] [INFO] Chomka: Starting webview
+[2026-01-23 09:27:50] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-23 09:27:52] [INFO] [Lifecycle] Confirmation result: True
+[2026-01-23 09:27:52] [INFO] [Lifecycle] User chose SAVE. Triggering JS ShutdownManager (async)...
+[2026-01-23 09:27:52] [JS_ERROR] JS Error: INFO
+Stack: [Shutdown] Initiating sequence (triggerQuit=true)
+[2026-01-23 09:27:52] [INFO] [Lifecycle] JS ShutdownManager triggered successfully
+[2026-01-23 09:27:52] [INFO] File saved: desktop.json
+[2026-01-23 09:27:52] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-23 09:27:52] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 09:27:52] [INFO] [Lifecycle] Terminal state active, allowing final close
+[2026-01-23 09:27:52] [INFO] [Lifecycle] Window destroyed. Triggering hard exit...
+[2026-01-23 09:47:39] [INFO] Chomka: Session started (v1.0.6)
+[2026-01-23 09:47:39] [INFO] Chomka: Starting webview
+[2026-01-23 09:47:50] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-23 09:47:51] [INFO] [Lifecycle] Confirmation result: True
+[2026-01-23 09:47:51] [INFO] [Lifecycle] User chose SAVE. Triggering JS ShutdownManager (async)...
+[2026-01-23 09:47:51] [JS_ERROR] JS Error: INFO
+Stack: [Shutdown] Initiating sequence (triggerQuit=true)
+[2026-01-23 09:47:51] [INFO] [Lifecycle] JS ShutdownManager triggered successfully
+[2026-01-23 09:47:51] [INFO] File saved: desktop.json
+[2026-01-23 09:47:51] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-23 09:47:51] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 09:47:51] [INFO] [Lifecycle] Terminal state active, allowing final close
+[2026-01-23 09:47:51] [INFO] [Lifecycle] Window destroyed. Triggering hard exit...
+[2026-01-23 09:48:53] [INFO] Chomka: Session started (v1.0.6)
+[2026-01-23 09:48:53] [INFO] Chomka: Starting webview
+[2026-01-23 10:00:33] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-23 10:00:34] [INFO] [Lifecycle] Confirmation result: True
+[2026-01-23 10:00:34] [INFO] [Lifecycle] User chose SAVE. Triggering JS ShutdownManager (async)...
+[2026-01-23 10:00:34] [JS_ERROR] JS Error: INFO
+Stack: [Shutdown] Initiating sequence (triggerQuit=true)
+[2026-01-23 10:00:34] [INFO] [Lifecycle] JS ShutdownManager triggered successfully
+[2026-01-23 10:00:34] [INFO] File saved: desktop.json
+[2026-01-23 10:00:34] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-23 10:00:34] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 10:00:34] [INFO] [Lifecycle] Terminal state active, allowing final close
+[2026-01-23 10:00:35] [INFO] [Lifecycle] Window destroyed. Triggering hard exit...
+[2026-01-23 10:00:36] [INFO] Chomka: Session started (v1.0.6)
+[2026-01-23 10:00:36] [INFO] Chomka: Starting webview
+[2026-01-23 10:00:44] [INFO] File saved: desktop.json
+[2026-01-23 10:00:52] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-23 10:00:54] [INFO] [Lifecycle] Confirmation result: True
+[2026-01-23 10:00:54] [INFO] [Lifecycle] User chose SAVE. Triggering JS ShutdownManager (async)...
+[2026-01-23 10:00:54] [JS_ERROR] JS Error: INFO
+Stack: [Shutdown] Initiating sequence (triggerQuit=true)
+[2026-01-23 10:00:54] [INFO] [Lifecycle] JS ShutdownManager triggered successfully
+[2026-01-23 10:00:54] [INFO] File saved: desktop.json
+[2026-01-23 10:00:54] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-23 10:00:54] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 10:00:54] [INFO] [Lifecycle] Terminal state active, allowing final close
+[2026-01-23 10:00:54] [INFO] [Lifecycle] Window destroyed. Triggering hard exit...
+[2026-01-23 10:07:45] [INFO] Chomka: Session started (v1.0.6)
+[2026-01-23 10:07:45] [INFO] Chomka: Starting webview
+[2026-01-23 10:07:55] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-23 10:07:56] [INFO] [Lifecycle] Confirmation result: True
+[2026-01-23 10:07:56] [INFO] [Lifecycle] User chose SAVE. Triggering JS ShutdownManager (async)...
+[2026-01-23 10:07:56] [JS_ERROR] JS Error: INFO
+Stack: [Shutdown] Initiating sequence (triggerQuit=true)
+[2026-01-23 10:07:56] [INFO] [Lifecycle] JS ShutdownManager triggered successfully
+[2026-01-23 10:07:56] [INFO] File saved: desktop.json
+[2026-01-23 10:07:56] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-23 10:07:56] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 10:07:56] [INFO] [Lifecycle] Terminal state active, allowing final close
+[2026-01-23 10:07:57] [INFO] [Lifecycle] Window destroyed. Triggering hard exit...
+[2026-01-23 10:28:18] [INFO] Chomka: Session started (v1.0.6)
+[2026-01-23 10:28:18] [INFO] Chomka: Starting webview
+[2026-01-23 10:40:33] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-23 10:40:34] [INFO] [Lifecycle] Confirmation result: True
+[2026-01-23 10:40:34] [INFO] [Lifecycle] User chose SAVE. Triggering JS ShutdownManager (async)...
+[2026-01-23 10:40:34] [JS_ERROR] JS Error: INFO
+Stack: [Shutdown] Initiating sequence (triggerQuit=true)
+[2026-01-23 10:40:34] [INFO] [Lifecycle] JS ShutdownManager triggered successfully
+[2026-01-23 10:40:34] [INFO] File saved: desktop.json
+[2026-01-23 10:40:34] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-23 10:40:34] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 10:40:34] [INFO] [Lifecycle] Terminal state active, allowing final close
+[2026-01-23 10:40:35] [INFO] [Lifecycle] Window destroyed. Triggering hard exit...
+[2026-01-23 11:04:54] [INFO] Chomka: Session started (v1.0.6)
+[2026-01-23 11:04:54] [INFO] Chomka: Starting webview
+[2026-01-23 11:04:59] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-23 11:05:00] [INFO] [Lifecycle] Confirmation result: True
+[2026-01-23 11:05:00] [INFO] [Lifecycle] User chose SAVE. Triggering JS ShutdownManager (async)...
+[2026-01-23 11:05:00] [JS_ERROR] JS Error: INFO
+Stack: [Shutdown] Initiating sequence (triggerQuit=true)
+[2026-01-23 11:05:00] [INFO] [Lifecycle] JS ShutdownManager triggered successfully
+[2026-01-23 11:05:00] [INFO] File saved: desktop.json
+[2026-01-23 11:05:00] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-23 11:05:00] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 11:05:00] [INFO] [Lifecycle] Terminal state active, allowing final close
+[2026-01-23 11:05:01] [INFO] [Lifecycle] Window destroyed. Triggering hard exit...
+[2026-01-23 11:21:32] [INFO] Created initial config.json
+[2026-01-23 11:21:32] [INFO] Chomka: Session started (v1.0.6)
+[2026-01-23 11:21:32] [INFO] Chomka: Starting webview (debug=False)
+[2026-01-23 11:21:38] [JS_ERROR] JS Error: Uncaught SyntaxError: Unexpected identifier 'app'
+Stack: SyntaxError: Unexpected identifier 'app'
+[2026-01-23 11:21:38] [JS_ERROR] JS Error: Uncaught SyntaxError: Unexpected identifier 'app'
+Stack: SyntaxError: Unexpected identifier 'app'
+[2026-01-23 11:21:44] [JS_ERROR] JS Error: Uncaught SyntaxError: Unexpected identifier 'app'
+Stack: SyntaxError: Unexpected identifier 'app'
+[2026-01-23 11:21:44] [JS_ERROR] JS Error: Uncaught SyntaxError: Unexpected identifier 'app'
+Stack: SyntaxError: Unexpected identifier 'app'
+[2026-01-23 11:21:45] [INFO] State saved: desktop_items
+[2026-01-23 11:21:45] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-23 11:21:46] [INFO] [Lifecycle] Confirmation result: True
+[2026-01-23 11:21:46] [INFO] [Lifecycle] User chose SAVE. Triggering JS ShutdownManager (async)...
+[2026-01-23 11:21:46] [JS_ERROR] JS Error: INFO
+Stack: [Shutdown] Initiating sequence (triggerQuit=true)
+[2026-01-23 11:21:46] [JS_ERROR] JS Error: INFO
+Stack: [Shutdown] Collected 3 items
+[2026-01-23 11:21:46] [JS_ERROR] JS Error: INFO
+Stack: [Shutdown] Updated localStorage with 3 items
+[2026-01-23 11:21:46] [INFO] [Lifecycle] JS ShutdownManager triggered successfully
+[2026-01-23 11:21:46] [INFO] State saved: desktop_items
+[2026-01-23 11:21:47] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-23 11:21:47] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 11:21:47] [INFO] [Lifecycle] Terminal state active, allowing final close
+[2026-01-23 11:21:47] [INFO] [Lifecycle] Window destroyed. Triggering hard exit...
+[2026-01-23 11:21:49] [INFO] Chomka: Session started (v1.0.6)
+[2026-01-23 11:21:49] [INFO] Chomka: Starting webview (debug=False)
+[2026-01-23 11:21:53] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-23 11:21:54] [INFO] [Lifecycle] Confirmation result: True
+[2026-01-23 11:21:54] [INFO] [Lifecycle] User chose SAVE. Triggering JS ShutdownManager (async)...
+[2026-01-23 11:21:54] [JS_ERROR] JS Error: INFO
+Stack: [Shutdown] Initiating sequence (triggerQuit=true)
+[2026-01-23 11:21:54] [JS_ERROR] JS Error: INFO
+Stack: [Shutdown] Collected 4 items
+[2026-01-23 11:21:54] [JS_ERROR] JS Error: INFO
+Stack: [Shutdown] Updated localStorage with 4 items
+[2026-01-23 11:21:54] [INFO] [Lifecycle] JS ShutdownManager triggered successfully
+[2026-01-23 11:21:54] [INFO] State saved: desktop_items
+[2026-01-23 11:21:54] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-23 11:21:54] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 11:21:54] [INFO] [Lifecycle] Terminal state active, allowing final close
+[2026-01-23 11:21:55] [INFO] [Lifecycle] Window destroyed. Triggering hard exit...
+[2026-01-23 11:44:44] [INFO] Chomka: Session started (v1.0.6)
+[2026-01-23 11:44:44] [INFO] Chomka: Starting webview (debug=False)
+[2026-01-23 11:44:54] [INFO] State saved: desktop_items
+[2026-01-23 11:44:56] [INFO] State saved: desktop_items
+[2026-01-23 11:45:02] [INFO] State saved: desktop_items
+[2026-01-23 11:45:10] [INFO] State saved: desktop_items
+[2026-01-23 11:45:12] [INFO] State saved: desktop_items
+[2026-01-23 11:45:16] [INFO] State saved: desktop_items
+[2026-01-23 11:45:18] [INFO] State saved: desktop_items
+[2026-01-23 11:45:29] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-23 11:45:30] [INFO] [Lifecycle] Confirmation result: True
+[2026-01-23 11:45:30] [INFO] [Lifecycle] User chose SAVE. Triggering JS ShutdownManager (async)...
+[2026-01-23 11:45:30] [JS_ERROR] JS Error: INFO
+Stack: [Shutdown] Initiating sequence (triggerQuit=true)
+[2026-01-23 11:45:30] [JS_ERROR] JS Error: INFO
+Stack: [Shutdown] Collected 3 items
+[2026-01-23 11:45:31] [JS_ERROR] JS Error: INFO
+Stack: [Shutdown] Updated localStorage with 3 items
+[2026-01-23 11:45:31] [INFO] [Lifecycle] JS ShutdownManager triggered successfully
+[2026-01-23 11:45:31] [INFO] State saved: desktop_items
+[2026-01-23 11:45:31] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-23 11:45:31] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 11:45:31] [INFO] [Lifecycle] Terminal state active, allowing final close
+[2026-01-23 11:45:31] [INFO] [Lifecycle] Window destroyed. Triggering hard exit...
+[2026-01-23 11:45:35] [INFO] Chomka: Session started (v1.0.6)
+[2026-01-23 11:45:35] [INFO] Chomka: Starting webview (debug=False)
+[2026-01-23 11:45:39] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-23 18:30:27] [INFO] Chomka: Session started (v1.0.6)
+[2026-01-23 18:30:27] [INFO] Chomka: Starting webview (debug=False)
+[2026-01-23 18:30:41] [INFO] State saved: desktop_items
+[2026-01-23 18:30:43] [INFO] Opening native window for: https://discord.com/app
+[2026-01-23 18:30:44] [INFO] State saved: desktop_items
+[2026-01-23 18:30:55] [INFO] State saved: desktop_items
+[2026-01-23 18:31:01] [INFO] State saved: desktop_items
+[2026-01-23 18:31:12] [INFO] State saved: desktop_items
+[2026-01-23 18:31:17] [INFO] State saved: desktop_items
+[2026-01-23 18:31:20] [INFO] State saved: desktop_items
+[2026-01-23 18:31:21] [INFO] State saved: desktop_items
+[2026-01-23 18:31:23] [INFO] State saved: desktop_items
+[2026-01-23 18:31:28] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-23 18:31:30] [INFO] [Lifecycle] Confirmation result: True
+[2026-01-23 18:31:30] [INFO] [Lifecycle] User chose SAVE. Triggering JS ShutdownManager (async)...
+[2026-01-23 18:31:30] [JS_ERROR] JS Error: INFO
+Stack: [Shutdown] Initiating sequence (triggerQuit=true)
+[2026-01-23 18:31:30] [JS_ERROR] JS Error: INFO
+Stack: [Shutdown] Collected 6 items
+[2026-01-23 18:31:30] [JS_ERROR] JS Error: INFO
+Stack: [Shutdown] Updated localStorage with 6 items
+[2026-01-23 18:31:30] [INFO] [Lifecycle] JS ShutdownManager triggered successfully
+[2026-01-23 18:31:30] [INFO] State saved: desktop_items
+[2026-01-23 18:31:30] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-23 18:31:30] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-23 18:31:30] [INFO] [Lifecycle] Terminal state active, allowing final close
+[2026-01-23 18:31:30] [INFO] [Lifecycle] Window destroyed. Triggering hard exit...
+[2026-01-28 17:41:37] [INFO] Chomka: Session started (v1.0.6)
+[2026-01-28 17:41:37] [INFO] Chomka: Starting webview (debug=False)
+[2026-01-28 17:42:34] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-28 17:42:35] [INFO] [Lifecycle] Confirmation result: True
+[2026-01-28 17:42:35] [INFO] [Lifecycle] User chose SAVE. Triggering JS ShutdownManager (async)...
+[2026-01-28 17:42:35] [INFO] [Lifecycle] JS ShutdownManager triggered successfully
+[2026-01-28 17:42:38] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-28 17:42:38] [INFO] [Lifecycle] Save-and-quit in progress, ignoring close request until done
+[2026-01-28 17:42:45] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-28 17:42:45] [INFO] [Lifecycle] Save-and-quit in progress, ignoring close request until done
+[2026-01-28 17:49:33] [INFO] Chomka: Session started (v1.0.7)
+[2026-01-28 17:49:33] [INFO] Chomka: Starting webview (debug=False)
+[2026-01-28 17:49:41] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-28 17:49:43] [INFO] [Lifecycle] Confirmation result: True
+[2026-01-28 17:49:43] [INFO] [Lifecycle] User chose SAVE. Triggering JS ShutdownManager (async)...
+[2026-01-28 17:49:43] [INFO] [Lifecycle] JS ShutdownManager triggered successfully
+[2026-01-28 17:50:43] [WARNING] [Lifecycle] Safety Exit Timer reached (60s). Force terminating...
+[2026-01-28 17:50:43] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-28 17:50:43] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-28 17:50:43] [INFO] [Lifecycle] Terminal state active, allowing final close
+[2026-01-28 17:50:43] [INFO] [Lifecycle] Window destroyed. Triggering hard exit...
+[2026-01-28 22:28:33] [INFO] Chomka: Session started (v1.0.9)
+[2026-01-28 22:28:33] [INFO] Chomka: Starting webview (debug=False)
+[2026-01-28 22:28:39] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-28 22:28:40] [INFO] [Lifecycle] Confirmation result: True
+[2026-01-28 22:28:40] [INFO] [Lifecycle] User chose SAVE. Triggering JS ShutdownManager (async)...
+[2026-01-28 22:28:40] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-28 22:28:40] [INFO] [Lifecycle] JS ShutdownManager triggered successfully
+[2026-01-28 22:28:40] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-28 22:28:40] [INFO] [Lifecycle] Terminal state active, allowing final close
+[2026-01-28 22:28:41] [INFO] [Lifecycle] Window destroyed. Triggering hard exit...
+[2026-01-28 22:48:15] [INFO] Chomka: Session started (v1.0.9)
+[2026-01-28 22:48:15] [INFO] Chomka: Starting webview (debug=False)
+[2026-01-28 22:48:19] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-28 22:48:21] [INFO] [Lifecycle] Confirmation result: True
+[2026-01-28 22:48:21] [INFO] [Lifecycle] User chose SAVE. Triggering JS ShutdownManager (async)...
+[2026-01-28 22:48:21] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-28 22:48:21] [INFO] [Lifecycle] JS ShutdownManager triggered successfully
+[2026-01-28 22:48:21] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-28 22:48:21] [INFO] [Lifecycle] Terminal state active, allowing final close
+[2026-01-28 22:48:21] [INFO] [Lifecycle] Window destroyed. Triggering hard exit...
+[2026-01-28 23:46:36] [INFO] Chomka: Session started (v1.0.9)
+[2026-01-28 23:46:36] [INFO] Chomka: Starting webview (debug=False)
+[2026-01-28 23:46:45] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-28 23:46:47] [INFO] [Lifecycle] Confirmation result: True
+[2026-01-28 23:46:47] [INFO] [Lifecycle] User chose SAVE. Triggering JS ShutdownManager (async)...
+[2026-01-28 23:46:47] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-28 23:46:47] [INFO] [Lifecycle] JS ShutdownManager triggered successfully
+[2026-01-28 23:46:47] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-28 23:46:47] [INFO] [Lifecycle] Terminal state active, allowing final close
+[2026-01-28 23:46:47] [INFO] [Lifecycle] Window destroyed. Triggering hard exit...
+[2026-01-28 23:56:49] [INFO] Chomka: Session started (v1.0.7)
+[2026-01-28 23:56:49] [INFO] Chomka: Starting webview (debug=False)
+[2026-01-28 23:56:52] [INFO] Chomka: Checking for core app migration...
+[2026-01-28 23:56:52] [INFO] Chomka: Core app app-youtube missing, adding...
+[2026-01-28 23:56:52] [INFO] Chomka: Core app app-discord missing, adding...
+[2026-01-28 23:56:52] [INFO] Chomka: Core app app-minecraft-wiki missing, adding...
+[2026-01-28 23:56:52] [INFO] Chomka: Migrated 0 assets and core apps, updating config.json
+[2026-01-28 23:56:52] [INFO] State saved: desktop_items
+[2026-01-28 23:56:55] [INFO] Opening native window for: https://discord.com/app
+[2026-01-29 00:02:15] [INFO] Recording started
+[2026-01-29 00:02:20] [INFO] Opening native window for: https://www.youtube.com
+[2026-01-29 00:02:20] [INFO] State saved: last_yt_url
+[2026-01-29 00:03:13] [INFO] Recording stopped
+[2026-01-29 00:03:13] [INFO] Saving recording rec-1769637793228...
+[2026-01-29 00:03:13] [INFO] Asset saved: rec-1769637793228_2b9670c02fef46bcae1f931e063e1616.webm
+[2026-01-29 00:03:13] [INFO] Recording saved to assets/rec-1769637793228_2b9670c02fef46bcae1f931e063e1616.webm
+[2026-01-29 00:03:25] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-29 00:03:28] [INFO] [Lifecycle] Confirmation result: False
+[2026-01-29 00:03:28] [INFO] [Lifecycle] User chose QUIT WITHOUT SAVE
+[2026-01-29 00:06:17] [INFO] Chomka: Webview loop ended
+[2026-01-29 00:16:35] [INFO] Chomka: Session started (v1.08)
+[2026-01-29 00:16:35] [INFO] Chomka: Starting webview (debug=False)
+[2026-01-29 00:16:37] [INFO] Chomka: Checking for core app migration...
+[2026-01-29 00:16:37] [INFO] Chomka: Core app app-youtube missing, adding...
+[2026-01-29 00:16:37] [INFO] Chomka: Core app app-discord missing, adding...
+[2026-01-29 00:16:37] [INFO] Chomka: Core app app-minecraft-wiki missing, adding...
+[2026-01-29 00:16:37] [INFO] Chomka: Migrated 0 assets and core apps, updating config.json
+[2026-01-29 00:16:37] [INFO] State saved: desktop_items
+[2026-01-29 00:16:39] [INFO] [YT_REPAIR] Item yt-std-1769638599314 switched to Fallback Iframe Embed after Error 153.
+[2026-01-29 00:16:40] [INFO] State saved: desktop_items
+[2026-01-29 00:16:40] [INFO] File saved: saves/screenlayout.txt (size: 124 bytes, snippet: app-youtube: 20,150 [app]
+app-discord: 20,350 [app...)
+[2026-01-29 00:16:52] [INFO] [YT_REPAIR] Item yt-std-1769638599314 switched to Fallback Iframe Embed after Error 153.
+[2026-01-29 00:16:53] [INFO] State saved: desktop_items
+[2026-01-29 00:16:53] [INFO] File saved: saves/screenlayout.txt (size: 124 bytes, snippet: app-youtube: 20,150 [app]
+app-discord: 20,350 [app...)
+[2026-01-29 00:16:59] [INFO] Opening native window for: https://discord.com/app
+[2026-01-29 00:20:44] [INFO] Opening native window for: https://discord.com/app
+[2026-01-29 00:33:39] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-29 00:33:40] [INFO] [Lifecycle] Confirmation result: True
+[2026-01-29 00:33:40] [INFO] [Lifecycle] User chose SAVE. Triggering JS ShutdownManager (async)...
+[2026-01-29 00:33:40] [INFO] [Shutdown] Initiating sequence (triggerQuit=true)
+[2026-01-29 00:33:40] [INFO] [Shutdown] Collected 4 items
+[2026-01-29 00:33:40] [INFO] [Lifecycle] JS ShutdownManager triggered successfully
+[2026-01-29 00:33:40] [INFO] State saved: desktop_items
+[2026-01-29 00:33:40] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-29 00:33:40] [INFO] [Lifecycle] Destroying window for exit
+[2026-01-29 00:33:40] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-29 00:33:40] [INFO] [Lifecycle] Terminal state active, allowing final close
+[2026-01-29 00:33:40] [INFO] [Lifecycle] Window destroyed. Triggering hard exit...
+[2026-01-29 00:40:15] [INFO] Chomka: Session started (v1.09)
+[2026-01-29 00:40:15] [INFO] Chomka: Starting webview (debug=False)
+[2026-01-29 00:40:17] [INFO] Chomka: Checking for core app migration...
+[2026-01-29 00:40:17] [INFO] Chomka: Core app app-youtube missing, adding...
+[2026-01-29 00:40:17] [INFO] Chomka: Core app app-discord missing, adding...
+[2026-01-29 00:40:17] [INFO] Chomka: Migrated 0 assets and core apps, updating config.json
+[2026-01-29 00:40:17] [INFO] Chomka: Core app app-minecraft-wiki missing, adding...
+[2026-01-29 00:40:17] [INFO] State saved: desktop_items
+[2026-01-29 00:40:20] [INFO] State saved: desktop_items
+[2026-01-29 00:40:20] [INFO] File saved: saves/screenlayout.txt (size: 124 bytes, snippet: app-youtube: 20,150 [app]
+app-discord: 20,350 [app...)
+[2026-01-29 00:40:22] [INFO] Opening native window for: https://www.youtube.com/watch?v=jQHok8S4nDY
+[2026-01-29 00:40:22] [INFO] State saved: last_yt_url
+[2026-01-29 00:40:35] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-29 00:40:36] [INFO] [Lifecycle] Confirmation result: True
+[2026-01-29 00:40:36] [INFO] [Lifecycle] User chose SAVE. Triggering JS ShutdownManager (async)...
+[2026-01-29 00:40:36] [INFO] [Shutdown] Initiating sequence (triggerQuit=true)
+[2026-01-29 00:40:36] [INFO] [Shutdown] Collected 4 items
+[2026-01-29 00:40:36] [INFO] [Lifecycle] JS ShutdownManager triggered successfully
+[2026-01-29 00:40:36] [INFO] State saved: desktop_items
+[2026-01-29 00:40:36] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-29 00:40:36] [INFO] [Lifecycle] Destroying window for exit
+[2026-01-29 00:40:36] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-29 00:40:36] [INFO] [Lifecycle] Terminal state active, allowing final close
+[2026-01-29 00:40:37] [INFO] [Lifecycle] Window destroyed. Triggering hard exit...
+[2026-01-29 00:58:23] [INFO] Chomka: Session started (v1.10)
+[2026-01-29 00:58:23] [INFO] Chomka: Starting webview (debug=False)
+[2026-01-29 00:58:25] [INFO] Chomka: Checking for core app migration...
+[2026-01-29 00:58:25] [INFO] Chomka: Core app app-youtube missing, adding...
+[2026-01-29 00:58:25] [INFO] Chomka: Core app app-discord missing, adding...
+[2026-01-29 00:58:25] [INFO] Chomka: Core app app-minecraft-wiki missing, adding...
+[2026-01-29 00:58:25] [INFO] Chomka: Migrated 0 assets and core apps, updating config.json
+[2026-01-29 00:58:25] [INFO] State saved: desktop_items
+[2026-01-29 00:58:27] [INFO] Opening native window for: https://www.youtube.com/watch?v=jQHok8S4nDY
+[2026-01-29 00:58:28] [INFO] State saved: last_yt_url
+[2026-01-29 00:58:28] [INFO] State saved: desktop_items
+[2026-01-29 00:58:28] [INFO] File saved: saves/screenlayout.txt (size: 124 bytes, snippet: app-youtube: 20,150 [app]
+app-discord: 20,350 [app...)
+[2026-01-29 00:58:33] [INFO] State saved: desktop_items
+[2026-01-29 00:58:33] [INFO] File saved: saves/screenlayout.txt (size: 124 bytes, snippet: app-youtube: 20,150 [app]
+app-discord: 20,350 [app...)
+[2026-01-29 00:58:44] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-29 00:58:45] [INFO] [Lifecycle] Confirmation result: True
+[2026-01-29 00:58:45] [INFO] [Lifecycle] User chose SAVE. Triggering JS ShutdownManager (async)...
+[2026-01-29 00:58:45] [INFO] [Shutdown] Initiating sequence (triggerQuit=true)
+[2026-01-29 00:58:45] [INFO] [Shutdown] Collected 4 items
+[2026-01-29 00:58:45] [INFO] [Lifecycle] JS ShutdownManager triggered successfully
+[2026-01-29 00:58:45] [INFO] State saved: desktop_items
+[2026-01-29 00:58:45] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-29 00:58:45] [INFO] [Lifecycle] Destroying window for exit
+[2026-01-29 00:58:45] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-29 00:58:45] [INFO] [Lifecycle] Terminal state active, allowing final close
+[2026-01-29 00:58:45] [INFO] [Lifecycle] Window destroyed. Triggering hard exit...
+[2026-01-29 01:05:33] [INFO] Chomka: Session started (v1.11)
+[2026-01-29 01:05:33] [INFO] Chomka: Starting webview (debug=False)
+[2026-01-29 01:05:36] [INFO] Chomka: Checking for core app migration...
+[2026-01-29 01:05:36] [INFO] Chomka: Core app app-youtube missing, adding...
+[2026-01-29 01:05:36] [INFO] Chomka: Core app app-discord missing, adding...
+[2026-01-29 01:05:36] [INFO] Chomka: Core app app-minecraft-wiki missing, adding...
+[2026-01-29 01:05:36] [INFO] Chomka: Migrated 0 assets and core apps, updating config.json
+[2026-01-29 01:05:36] [INFO] State saved: desktop_items
+[2026-01-29 01:05:38] [INFO] State saved: desktop_items
+[2026-01-29 01:05:38] [INFO] File saved: saves/screenlayout.txt (size: 124 bytes, snippet: app-youtube: 20,150 [app]
+app-discord: 20,350 [app...)
+[2026-01-29 01:05:40] [INFO] Opening native window for: https://www.youtube.com/watch?v=jQHok8S4nDY
+[2026-01-29 01:05:40] [INFO] State saved: last_yt_url
+[2026-01-29 01:06:58] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-29 01:07:00] [INFO] [Lifecycle] Confirmation result: True
+[2026-01-29 01:07:00] [INFO] [Lifecycle] User chose SAVE. Triggering JS ShutdownManager (async)...
+[2026-01-29 01:07:00] [INFO] [Shutdown] Initiating sequence (triggerQuit=true)
+[2026-01-29 01:07:00] [INFO] [Shutdown] Collected 4 items
+[2026-01-29 01:07:00] [INFO] [Lifecycle] JS ShutdownManager triggered successfully
+[2026-01-29 01:07:00] [INFO] State saved: desktop_items
+[2026-01-29 01:07:00] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-29 01:07:00] [INFO] [Lifecycle] Destroying window for exit
+[2026-01-29 01:07:00] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-29 01:07:00] [INFO] [Lifecycle] Terminal state active, allowing final close
+[2026-01-29 01:07:00] [INFO] [Lifecycle] Window destroyed. Triggering hard exit...
+[2026-01-29 01:08:57] [INFO] Chomka: Session started (v1.12)
+[2026-01-29 01:08:57] [INFO] Chomka: Starting webview (debug=False)
+[2026-01-29 01:09:00] [INFO] Chomka: Checking for core app migration...
+[2026-01-29 01:09:00] [INFO] Chomka: Core app app-youtube missing, adding...
+[2026-01-29 01:09:00] [INFO] Chomka: Core app app-discord missing, adding...
+[2026-01-29 01:09:00] [INFO] Chomka: Core app app-minecraft-wiki missing, adding...
+[2026-01-29 01:09:00] [INFO] Chomka: Migrated 0 assets and core apps, updating config.json
+[2026-01-29 01:09:00] [INFO] State saved: desktop_items
+[2026-01-29 01:09:03] [INFO] State saved: desktop_items
+[2026-01-29 01:09:03] [INFO] File saved: saves/screenlayout.txt (size: 124 bytes, snippet: app-youtube: 20,150 [app]
+app-discord: 20,350 [app...)
+[2026-01-29 01:09:06] [INFO] Opening native window for: https://www.youtube.com/watch?v=jQHok8S4nDY
+[2026-01-29 01:09:06] [INFO] State saved: last_yt_url
+[2026-01-29 01:10:39] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-29 01:10:40] [INFO] [Lifecycle] Confirmation result: True
+[2026-01-29 01:10:40] [INFO] [Lifecycle] User chose SAVE. Triggering JS ShutdownManager (async)...
+[2026-01-29 01:10:40] [INFO] [Shutdown] Initiating sequence (triggerQuit=true)
+[2026-01-29 01:10:40] [INFO] [Shutdown] Collected 4 items
+[2026-01-29 01:10:40] [INFO] [Lifecycle] JS ShutdownManager triggered successfully
+[2026-01-29 01:10:40] [INFO] State saved: desktop_items
+[2026-01-29 01:10:40] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-29 01:10:40] [INFO] [Lifecycle] Destroying window for exit
+[2026-01-29 01:10:40] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-29 01:10:40] [INFO] [Lifecycle] Terminal state active, allowing final close
+[2026-01-29 01:10:41] [INFO] [Lifecycle] Window destroyed. Triggering hard exit...
+[2026-01-29 01:16:11] [INFO] Chomka: Session started (v1.13)
+[2026-01-29 01:16:11] [INFO] Chomka: Starting webview (debug=False)
+[2026-01-29 01:16:13] [INFO] Chomka: Checking for core app migration...
+[2026-01-29 01:16:13] [INFO] Chomka: Core app app-youtube missing, adding...
+[2026-01-29 01:16:13] [INFO] Chomka: Core app app-discord missing, adding...
+[2026-01-29 01:16:13] [INFO] Chomka: Core app app-minecraft-wiki missing, adding...
+[2026-01-29 01:16:13] [INFO] Chomka: Migrated 0 assets and core apps, updating config.json
+[2026-01-29 01:16:13] [INFO] State saved: desktop_items
+[2026-01-29 01:16:16] [INFO] Opening native window for: https://www.youtube.com/watch?v=jQHok8S4nDY
+[2026-01-29 01:16:16] [INFO] State saved: last_yt_url
+[2026-01-29 01:16:17] [INFO] State saved: desktop_items
+[2026-01-29 01:16:17] [INFO] File saved: saves/screenlayout.txt (size: 124 bytes, snippet: app-youtube: 20,150 [app]
+app-discord: 20,350 [app...)
+[2026-01-29 01:16:48] [INFO] State saved: desktop_items
+[2026-01-29 01:16:48] [INFO] File saved: saves/screenlayout.txt (size: 123 bytes, snippet: app-youtube: 20,150 [app]
+app-discord: 20,350 [app...)
+[2026-01-29 01:16:50] [INFO] State saved: desktop_items
+[2026-01-29 01:16:50] [INFO] File saved: saves/screenlayout.txt (size: 124 bytes, snippet: app-youtube: 20,150 [app]
+app-discord: 20,350 [app...)
+[2026-01-29 01:16:52] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-29 01:16:53] [INFO] [Lifecycle] Confirmation result: True
+[2026-01-29 01:16:53] [INFO] [Lifecycle] User chose SAVE. Triggering JS ShutdownManager (async)...
+[2026-01-29 01:16:53] [INFO] [Shutdown] Initiating sequence (triggerQuit=true)
+[2026-01-29 01:16:53] [INFO] [Shutdown] Collected 4 items
+[2026-01-29 01:16:53] [INFO] [Lifecycle] JS ShutdownManager triggered successfully
+[2026-01-29 01:16:53] [INFO] State saved: desktop_items
+[2026-01-29 01:16:53] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-29 01:16:53] [INFO] [Lifecycle] Destroying window for exit
+[2026-01-29 01:16:53] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-29 01:16:53] [INFO] [Lifecycle] Terminal state active, allowing final close
+[2026-01-29 01:16:54] [INFO] [Lifecycle] Window destroyed. Triggering hard exit...
+[2026-01-29 01:16:55] [INFO] Chomka: Session started (v1.13)
+[2026-01-29 01:16:55] [INFO] Chomka: Starting webview (debug=False)
+[2026-01-29 01:16:57] [INFO] Chomka: Checking for core app migration...
+[2026-01-29 01:16:57] [INFO] Chomka: Core app app-youtube missing, adding...
+[2026-01-29 01:16:57] [INFO] Chomka: Core app app-discord missing, adding...
+[2026-01-29 01:16:57] [INFO] Chomka: Core app app-minecraft-wiki missing, adding...
+[2026-01-29 01:16:57] [INFO] Chomka: Migrated 0 assets and core apps, updating config.json
+[2026-01-29 01:16:57] [INFO] State saved: desktop_items
+[2026-01-29 01:17:00] [INFO] State saved: desktop_items
+[2026-01-29 01:17:00] [INFO] File saved: saves/screenlayout.txt (size: 124 bytes, snippet: app-youtube: 20,150 [app]
+app-discord: 20,350 [app...)
+[2026-01-29 01:17:04] [INFO] Opening native window for: https://www.youtube.com/watch?v=jQHok8S4nDY
+[2026-01-29 01:17:04] [INFO] State saved: last_yt_url
+[2026-01-29 01:17:15] [INFO] State saved: desktop_items
+[2026-01-29 01:17:15] [INFO] File saved: saves/screenlayout.txt (size: 124 bytes, snippet: app-youtube: 20,150 [app]
+app-discord: 20,350 [app...)
+[2026-01-29 01:17:48] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-29 01:17:50] [INFO] [Lifecycle] Confirmation result: True
+[2026-01-29 01:17:50] [INFO] [Lifecycle] User chose SAVE. Triggering JS ShutdownManager (async)...
+[2026-01-29 01:17:50] [INFO] [Shutdown] Initiating sequence (triggerQuit=true)
+[2026-01-29 01:17:50] [INFO] [Shutdown] Collected 4 items
+[2026-01-29 01:17:50] [INFO] [Lifecycle] JS ShutdownManager triggered successfully
+[2026-01-29 01:17:50] [INFO] State saved: desktop_items
+[2026-01-29 01:17:50] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-29 01:17:50] [INFO] [Lifecycle] Destroying window for exit
+[2026-01-29 01:17:50] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-29 01:17:50] [INFO] [Lifecycle] Terminal state active, allowing final close
+[2026-01-29 01:17:51] [INFO] [Lifecycle] Window destroyed. Triggering hard exit...
+[2026-01-29 15:00:38] [INFO] Chomka: Session started (v1.14)
+[2026-01-29 15:00:38] [INFO] Chomka: Starting webview (debug=False)
+[2026-01-29 15:00:41] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-29 15:00:43] [INFO] [Lifecycle] Confirmation result: True
+[2026-01-29 15:00:43] [INFO] [Lifecycle] User chose SAVE. Triggering JS ShutdownManager (async)...
+[2026-01-29 15:00:43] [INFO] [Lifecycle] JS ShutdownManager triggered successfully
+[2026-01-29 15:00:45] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-29 15:00:45] [INFO] [Lifecycle] Destroying window for exit
+[2026-01-29 15:00:45] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-29 15:00:45] [INFO] [Lifecycle] Terminal state active, allowing final close
+[2026-01-29 15:00:45] [INFO] [Lifecycle] Window destroyed. Triggering hard exit...
+[2026-01-29 15:00:47] [INFO] Chomka: Session started (v1.14)
+[2026-01-29 15:00:47] [INFO] Chomka: Starting webview (debug=False)
+[2026-01-29 15:00:53] [INFO] [Lifecycle] on_closing triggered (is_saving=False)
+[2026-01-29 15:00:54] [INFO] [Lifecycle] Confirmation result: True
+[2026-01-29 15:00:54] [INFO] [Lifecycle] User chose SAVE. Triggering JS ShutdownManager (async)...
+[2026-01-29 15:00:54] [INFO] [Lifecycle] JS ShutdownManager triggered successfully
+[2026-01-29 15:00:56] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-29 15:00:56] [INFO] [Lifecycle] Save-and-quit in progress, ignoring close request until done
+[2026-01-29 15:00:56] [INFO] [Lifecycle] shut_down_immediately called
+[2026-01-29 15:00:56] [INFO] [Lifecycle] Destroying window for exit
+[2026-01-29 15:00:56] [INFO] [Lifecycle] on_closing triggered (is_saving=True)
+[2026-01-29 15:00:56] [INFO] [Lifecycle] Terminal state active, allowing final close
+[2026-01-29 15:00:57] [INFO] [Lifecycle] Window destroyed. Triggering hard exit...

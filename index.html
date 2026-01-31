@@ -9,11 +9,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/apps.css">
     <link rel="icon" type="image/png" href="sakura.png">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
 </head>
 
 <body>
+    <div id="startup-splash">
+        <div class="splash-content">
+            <div class="splash-logo">🐹</div>
+            <div class="splash-title">Chomka WebOS v1.14d</div>
+            <div class="splash-progress-container">
+                <div id="startup-progress-bar" class="splash-progress-bar"></div>
+            </div>
+            <div id="splash-status" class="splash-status">Initializing System...</div>
+        </div>
+    </div>
+
     <div id="desktop">
+        <!-- New Left Sidebar for Core Apps/AI -->
+
+
         <!-- Search Widget -->
         <div id="search-widget">
             <div class="search-brand">Chomka Search</div>
@@ -33,8 +49,23 @@
         <div class="tool-icon" title="New Tab" id="btn-add-tab">
             <span>+</span>
         </div>
+        <div class="tool-icon" title="YouTube Mode" id="btn-youtube">
+            <span>📺</span>
+        </div>
+        <div class="tool-icon" title="Shuffle Playlist" id="btn-shuffle-playlist">
+            <span>🎶</span>
+        </div>
+        <div class="tool-icon" title="Toggle Notifications" id="btn-notifications">
+            <span>💬</span>
+        </div>
+        <div class="tool-icon" title="Top Music Video" id="btn-top-music">
+            <span>⭐</span>
+        </div>
         <div class="tool-icon" title="Tab Grid">
             <span>:::</span>
+        </div>
+        <div class="tool-icon" title="Passkeeper" id="btn-passkeeper">
+            <span>🔑</span>
         </div>
         <div class="tool-icon" title="Feedback" id="btn-feedback">
             <span>✉</span>
@@ -45,9 +76,10 @@
         <div class="tool-icon" title="Move Mode" id="btn-move-mode">
             <span>⬈</span>
         </div>
-        <div class="tool-icon" title="Settings">
-            <span>⚙</span>
+        <div class="tool-icon" title="Record Screen" id="btn-record">
+            <span>📹</span>
         </div>
+
     </aside>
 
     <!-- Start Menu -->
@@ -69,14 +101,20 @@
                     <span class="item-icon">⚙️</span>
                     <span class="item-text">System Settings</span>
                 </div>
+                <div class="menu-item-large" id="menu-btn-record">
+                    <span class="item-icon">📹</span>
+                    <span class="item-text">Screen Recorder</span>
+                </div>
+
             </div>
         </div>
-        <div class="menu-footer">
-            <button id="shutdown-btn">
-                <span class="btn-icon">⏻</span>
-                Shut Down
-            </button>
-        </div>
+    </div>
+    <div class="menu-footer">
+        <button id="shutdown-btn">
+            <span class="btn-icon">⏻</span>
+            Shut Down
+        </button>
+    </div>
     </div>
 
     <!-- Save Status Indicator -->
@@ -92,6 +130,22 @@
             <!-- App shortcuts -->
         </div>
         <div id="tray">
+            <div id="tray-uptime" title="Session Uptime"
+                style="font-size: 0.7rem; color: var(--text-secondary); margin-right: 15px; font-family: monospace;">
+                UP: 00:00:00
+            </div>
+            <div id="system-monitor" title="Resource Load">
+                <div class="monitor-bar">
+                    <div id="cpu-load" class="fill" style="width:15%"></div>
+                </div>
+                <div class="monitor-bar">
+                    <div id="ram-load" class="fill" style="width:30%"></div>
+                </div>
+            </div>
+            <div id="tray-settings" title="System Settings"
+                style="margin-right: 15px; cursor: pointer; font-size: 1.1rem; opacity: 0.8; transition: transform 0.2s;">
+                ⚙️
+            </div>
             <span id="clock">12:00</span>
         </div>
     </div>
@@ -143,12 +197,28 @@
     <div id="item-context-menu" class="hidden">
         <div class="menu-item" data-action="layer-up">Bring Forward</div>
         <div class="menu-item" data-action="layer-down">Send Backward</div>
+        <div class="menu-item" data-action="toggle-yt-pin">Pin to YouTube Mode</div>
+        <div class="menu-item" data-action="copy-link">Copy Link</div>
         <div class="divider"></div>
         <div class="menu-item" data-action="delete-item" style="color: #ff4757;">Delete</div>
     </div>
 
+    <!-- Notifications Container -->
+    <div id="notification-container"></div>
+
+    <!-- Save Realization Asset (Hidden) -->
+    <div id="save-file-asset" class="hidden">
+        <div class="file-icon">📄</div>
+        <div class="file-label">screenlayout.txt</div>
+    </div>
+
+    <script src="js/bridge.js"></script>
     <script src="js/desktop_manager.js"></script>
+    <script src="js/notification_manager.js"></script>
+    <script src="js/recording_manager.js"></script>
     <script src="js/shutdown_manager.js"></script>
+    <script src="js/keyboard_manager.js"></script>
+    <script src="js/passkeeper.js"></script>
     <script src="js/script.js"></script>
 </body>
 

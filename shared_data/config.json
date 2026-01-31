@@ -1,0 +1,43 @@
+{
+    "desktop_items": [
+        {
+            "id": "app-youtube",
+            "type": "app",
+            "url": "https://www.youtube.com",
+            "name": "YouTube",
+            "iconUrl": "assets/youtube.png",
+            "x": 21,
+            "y": 165,
+            "w": 631.5,
+            "h": 706
+        },
+        {
+            "id": "app-discord",
+            "type": "app",
+            "url": "https://discord.com/app",
+            "name": "Discord",
+            "iconUrl": "assets/discord.png",
+            "x": 20,
+            "y": 350
+        },
+        {
+            "id": "app-minecraft-wiki",
+            "type": "app",
+            "url": "https://minecraft.wiki",
+            "name": "Minecraft Wiki",
+            "iconUrl": "assets/minecraft.png",
+            "x": 20,
+            "y": 550
+        },
+        {
+            "id": "yt-std-1769642982532",
+            "type": "video",
+            "src": "https://www.youtube.com/watch?v=jQHok8S4nDY",
+            "x": 482,
+            "y": 35,
+            "zIndex": 10,
+            "isRepaired": true
+        }
+    ],
+    "last_yt_url": "https://www.youtube.com"
+}
